@@ -1,7 +1,7 @@
 public class Practice {
 
     public static void main(String[] args) {
-            System.out.print(x:"Hello world!");
+            System.out.print(x:"Hello world!!");
     }
 
 }
