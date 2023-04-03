@@ -13,5 +13,6 @@ public class AreaCircumferance {
 
         System.out.println("Area of the circle is: " + Math.PI * Math.pow(radius, 2));
         System.out.println("Circumference of the circle is: " + Math.pow(radius, 2));
+        scanner.close();
     };
 }
