@@ -9,17 +9,29 @@ import java.util.Scanner;
 // The year is not a leap year (it has 365 days).
 public class LeapYear {
     public static void main(String[] args) {
-        Scanner year = new Scanner(System.in);
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a year: ");
+        int year = scanner.nextInt();
+
         if (year % 4 == 0) {
-            System.out.println(year + "is a leap year");
-        } else if (year % 400 == 0) {
-            System.out.println(year + "is a leap year");
-        } else if (year % 100 == 0) {
-            System.out.println(year + "is not a leap year");
-        } else if (year == NumberOfDaysInYear) {
 
+            if (year % 100 == 0) {
+
+                if (year % 400 == 0) {
+
+                    System.out.println(year + "Is a leap year");
+                } else {
+
+                    System.out.println(year + "Is not a leap year");
+                }
+            } else {
+                System.out.println(year + "Is a leap year");
+            }
+        } else {
+            System.out.println(year + "Is not a leap year");
         }
-        int NumberOfDaysInYear = 365;
     }
-
 }
+// why is both "enter a year" and the answer not on correct lines
